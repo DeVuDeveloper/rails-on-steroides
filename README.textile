@@ -361,7 +361,6 @@ h2. Deployment
 For easy deployment, use a “platform as a service” provider such as:
 
 * "Heroku":http://www.heroku.com/
-* "CloudFoundry":http://www.cloudfoundry.com/
 * "EngineYard":http://www.engineyard.com/
 * "OpenShift":https://openshift.redhat.com/app/
 
