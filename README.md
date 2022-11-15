@@ -1,15 +1,13 @@
+# An application template that creates starter applications for Rails.
+
+## It's the Rails generator on steroids.
 
 
-An application template that creates starter applications for Rails.
 
-It's the Rails generator on steroids.
-
-
-|_. |_. |
 | !http://railsapps.github.io/images/rails-composer-mailing-list.png(Sign up for the Rails Composer mailing list)!:http://mailinglist.railscomposer.com/ |  !http://railsapps.github.io/images/join/join-railsapps.png(Join the RailsApps Project)!:http://railsapps.github.io/ |
 | "Rails Composer mailing list":http://mailinglist.railscomposer.com/ | "Support the project":http://railsapps.github.io/ |
 
-h4. From the RailsApps Project
+## From the RailsApps Project
 
 The "RailsApps":http://railsapps.github.io/ open source project offers starter applications and tutorials for Rails developers. Generate the applications with the Rails Composer tool.
 
@@ -17,7 +15,7 @@ All the code is explained in the Capstone Rails Tutorials. You can purchase the 
 
 "Sign up for the Rails Composer mailing list":http://mailinglist.railscomposer.com/ for news and announcements.
 
-h2. Starter Apps and Tutorials
+## Starter Apps and Tutorials
 
 |_. Example |_. Tutorial |_. Comments |
 | "learn-rails":https://github.com/RailsApps/learn-rails | "Learn Ruby on Rails":http://learn-rails.com/learn-ruby-on-rails.html | from the book for beginners |
@@ -31,16 +29,15 @@ h2. Starter Apps and Tutorials
 | "rails-signup-download":https://github.com/RailsApps/rails-signup-download | "Rails Signup Download":https://tutorials.railsapps.org/ | Devise plus download a PDF file |
 | "rails-stripe-checkout":https://github.com/RailsApps/rails-stripe-checkout | "Stripe Checkout":https://tutorials.railsapps.org/ | selling a product with Stripe Checkout |
 | "rails-stripe-coupons":https://github.com/RailsApps/rails-stripe-coupons | "Stripe JS With Coupons":https://tutorials.railsapps.org/ | complex Rails and Stripe integration |
-
-h4. The rails_apps_composer Gem
+## The rails_apps_composer Gem
 
 Do you want to customize the Rails Composer application template? The Rails Composer application template is built from recipes provided by the "rails_apps_composer":https://github.com/RailsApps/rails_apps_composer gem.
 
-h4. If You Are New to Rails
+##. If You Are New to Rails
 
 If you're new to Rails, see "What is Ruby on Rails?":http://railsapps.github.io/what-is-ruby-rails.html, the book "Learn Ruby on Rails":http://learn-rails.com/learn-ruby-on-rails.html, and recommendations for a "Rails tutorial":https://tutorials.railsapps.org/rails-tutorial.
 
-h2. Dependencies
+## Dependencies
 
 Before running the Rails Composer tool, you need to install:
 
@@ -53,7 +50,7 @@ Check that appropriate versions of Ruby and Rails are installed in your developm
 
 Be sure to read the article "Installing Rails":http://railsapps.github.io/installing-rails.html to make sure your development environment is set up properly.
 
-h2. How To Use Rails Composer
+## How To Use Rails Composer
 
 To build a Rails application using the Rails Composer tool:
 
@@ -67,7 +64,7 @@ The @$@ character indicates a shell prompt; don't include it when you run the co
 
 See the "Troubleshooting" section below if you see errors. In general, you'll avoid problems if you create your application using RVM as described in the next section.
 
-h3. Creating a Starter App Using RVM
+### Creating a Starter App Using RVM
 
 I recommend using "RVM":https://rvm.io/, the Ruby Version Manager, to manage your Rails versions, as described in the "Installing Rails":http://railsapps.github.io/installing-rails.html article.
 
@@ -91,7 +88,7 @@ Finally we run @rails new .@. We use the Unix "dot" convention to refer to the c
 
 This approach is different from the way most beginners are taught to create a Rails application. Our approach makes it easy to create a project-specific gemset to avoid clashes between gem versions when using the Rails Composer tool.
 
-h2. Choose a RailsApps Starter Application
+## Choose a RailsApps Starter Application
 
 Use Rails Composer to generate any of the example applications from the "RailsApps project":http://railsapps.github.io/. You'll be able to choose your own project name when you generate the app. Generating the application gives you additional options.
 
@@ -127,7 +124,7 @@ Each of these applications is available as an example in the "RailsApps GitHub r
 
 Make your choice. The Rails Composer tool may give you other options (other applications may have been added since these notes were written).
 
-h4. Options
+### Options
 
 The application generator template will ask you for additional preferences. Options vary, depending on the example application you build. Options may have changed in a newer version of Rails Composer.
 
@@ -173,27 +170,27 @@ The application generator template will ask you for additional preferences. Opti
    extras  Use or create a project-specific rvm gemset? (y/n)
 </pre>
 
-h4. Web Servers
+### Web Servers
 
 If you plan to deploy to Heroku, select Puma as your production webserver. Puma is recommended by Heroku.
 
-h4. Database
+## Database
 
 Choose "SQLite" for the easiest setup. If you choose PostgreSQL or MySQL, the databases must be installed and running before you run Rails Composer.
 
-h4. Template Engine
+## Template Engine
 
 The example applications use the default "ERB" Rails template engine. Optionally, you can use another template engine, such as Haml or Slim. See instructions for "Haml and Rails":http://railsapps.github.io/rails-haml.html.
 
-h4. Testing
+## Testing
 
 If you are a beginner, select "None." Select "RSpec with Capybara" if you want tests.
 
-h4. Front-end Framework
+## Front-end Framework
 
 If you choose a front-end framework, you'll get an application layout file, plus navigation and flash messages, styled with a default theme.
 
-h4. Other Choices
+## Other Choices
 
 Set a robots.txt file to ban spiders if you want to keep your new site out of Google search results.
 
@@ -201,11 +198,11 @@ If you choose to create a GitHub repository, the generator will prompt you for a
 
 It is a good idea to use "RVM":https://rvm.io/, the Ruby Version Manager, and create a project-specific rvm gemset (not available on Windows). See "Installing Rails":http://railsapps.github.io/installing-rails.html.
 
-h2. Contributed Applications
+## Contributed Applications
 
 Currently, there are no contributed applications available. If you would like to add your favorite starter application to Rails Composer, open an issue to let us know.
 
-h2. Build Your Own Application
+## Build Your Own Application
 
 If you choose "Custom application," you will get a wide set of choices. Not all are actively supported.
 
@@ -310,7 +307,7 @@ option  Add a deployment mechanism?
       2)  Capistrano3
 </pre>
 
-h2. Run the Application
+## Run the Application
 
 Switch to the application directory to examine and test what you've built.
 
@@ -318,7 +315,7 @@ Switch to the application directory to examine and test what you've built.
 $ cd myapp
 </pre>
 
-h4. Quick Test
+##. Quick Test
 
 For a "smoke test" to see if everything runs, display a list of Rake tasks.
 
@@ -328,7 +325,7 @@ $ rake -T
 
 There's no need to run @bundle exec rake@ instead of @rake@ when you are using rvm (see "rvm and bundler integration":https://rvm.io/integration/bundler/).
 
-h4. Start the Web Server
+##. Start the Web Server
 
 If you've chosen WEBrick or Thin for your web server, can run the app by entering the command:
 
@@ -354,7 +351,7 @@ For Phusion Passenger (Standalone):
 
 @$ passenger start@
 
-h4. Login
+##. Login
 
 If you've created a version of the application that sets up a default user, log in with:
 
@@ -363,7 +360,7 @@ If you've created a version of the application that sets up a default user, log 
 
 You should delete or change any pre-configured logins before you deploy your application.
 
-h2. Testing
+## Testing
 
 Some versions of the starter application will contain a suite of RSpec feature and unit tests.
 
@@ -371,7 +368,7 @@ Run @rspec@ to run all RSpec tests.
 
 Please send the author a message, create an issue, or submit a pull request if you want to contribute improved RSpec tests.
 
-h2. Deployment
+## Deployment
 
 For easy deployment, use a “platform as a service” provider such as:
 
@@ -384,13 +381,13 @@ For deployment on Heroku, see the article:
 
 * "Rails on Heroku":http://railsapps.github.io/rails-heroku-tutorial.html
 
-h2. Troubleshooting
+## Troubleshooting
 
 Problems? Please check both "issues for the Rails Composer tool":https://github.com/RailsApps/rails-composer/issues and the "issues for the rails_apps_composer gem":https://github.com/RailsApps/rails_apps_composer/issues.
 
 You should review the article "Installing Rails":http://railsapps.github.io/installing-rails.html to make sure you've updated all the components that are required to run Rails successfully.
 
-h4. Problems with "Could not be loaded... You have already activated..."
+##. Problems with "Could not be loaded... You have already activated..."
 
 If you get an error like this:
 
@@ -404,15 +401,15 @@ Using bundle exec may solve this.
 
 It's due to conflicting gem versions. See the article "Rails Error: “You have already activated (…)”":http://railsapps.github.io/rails-error-you-have-already-activated.html.
 
-h4. Problems with "Certificate Verify Failed"
+## Problems with "Certificate Verify Failed"
 
 Are you getting an error "OpenSSL certificate verify failed" when you try to generate a new Rails app from an application template? See suggestions to resolve the error "Certificate Verify Failed":http://railsapps.github.io/openssl-certificate-verify-failed.html.
 
-h4. Problems with "Segmentation Fault"
+##. Problems with "Segmentation Fault"
 
 If you get a "segfault" when you try @rails new@, try removing and reinstalling rvm.
 
-h2. Application Template Default
+## Application Template Default
 
 The @rails new@ command creates a new Rails application. If you want to use the Rails Composer application template for every Rails application you build, you can set options for the @rails new@ command in a *.railsrc* file in your home directory. Here's how to set up a *.railsrc* file to use the template when you create a new Rails application:
 
@@ -421,19 +418,19 @@ The @rails new@ command creates a new Rails application. If you want to use the 
 -m https://raw.github.com/RailsApps/rails-composer/master/composer.rb
 </pre>
 
-h2. Documentation and Support
+## Documentation and Support
 
 The Rails Composer application template is assembled from recipes supplied by the "rails_apps_composer":https://github.com/RailsApps/rails_apps_composer gem. See the rails_apps_composer project to understand how the Rails Composer application works.
 
-h4. Customizing the Template
+## Customizing the Template
 
 If you wish to change the template to generate an app with your own customized options, you can copy and edit the template file. However, it is better to use the "rails_apps_composer":https://github.com/RailsApps/rails_apps_composer gem to create a new application template. You'll find newer versions of the recipes that make up the application template. You may find issues have been identified and (perhaps) fixed. And it will be easier to maintain your application template if you work from the "rails_apps_composer":https://github.com/RailsApps/rails_apps_composer gem.
 
-h4. Writing Recipes
+##. Writing Recipes
 
 To understand the code in these templates, take a look at "Thor::Actions":http://rdoc.info/github/wycats/thor/master/Thor/Actions. Your recipes can use any methods provided by "Thor::Actions":http://rdoc.info/github/wycats/thor/master/Thor/Actions or "Rails::Generators::Actions":http://railsapi.com/doc/rails-v3.0.3/classes/Rails/Generators/Actions.html. A big thanks to Yehuda Katz for "creating Thor":http://yehudakatz.com/2008/05/12/by-thors-hammer/.
 
-h4. About Rails Application Templates
+## About Rails Application Templates
 
 There is an unfinished Rails Guide on "Rails Application Templates":https://github.com/rails/rails/blob/master/guides/source/rails_application_templates.md.
 
@@ -445,28 +442,28 @@ Also see:
 "Railscasts: App Templates in Rails 2.3 (9 Feb 2009) by Ryan Bates":http://railscasts.com/episodes/148-app-templates-in-rails-2-3
 "Rails templates (4 Dec 2008) by Pratik Naik":http://m.onkey.org/rails-templates
 
-h4. Similar Projects
+## Similar Projects
 
 There are many similar projects:
 
 * "Rails application template projects":http://railsapps.github.io/rails-application-templates.html
 * "Rails examples, tutorials, and starter apps":http://railsapps.github.io/rails-examples-tutorials.html.
 
-h4. Issues
+##. Issues
 
 Problems? Please check both "issues for the Rails Composer tool":https://github.com/RailsApps/rails-composer/issues and the "issues for the rails_apps_composer gem":https://github.com/RailsApps/rails_apps_composer/issues.
 
-h4. Where to Get Help
+##. Where to Get Help
 
 Your best source for help with problems is "Stack Overflow":http://stackoverflow.com/questions/tagged/railsapps. Your issue may have been encountered and addressed by others.
 
 Use the tag "railsapps" on Stack Overflow for extra attention.
 
-h2. Contributing
+## Contributing
 
 Please make changes to the "rails_apps_composer":https://github.com/RailsApps/rails_apps_composer gem rather than changing the Rails Composer application template.
 
-h2. Credits
+## Credits
 
 Daniel Kehoe initiated the "RailsApps project":https://github.com/RailsApps. The "rails_apps_composer":https://github.com/RailsApps/rails_apps_composer gem is derived from Michael Bleigh’s RailsWizard gem.
 
@@ -474,13 +471,13 @@ Is it useful to you? Follow the project on Twitter:
 "@rails_apps":http://twitter.com/rails_apps
 and tweet some praise. I'd love to know you were helped out by what I've put together.
 
-h2. License
+## License
 
 "MIT License":http://www.opensource.org/licenses/mit-license
 
 Copyright 2012-14 Daniel Kehoe
 
-h2. Useful Links
+## Useful Links
 
 |_. Getting Started |_. Articles |_. Tutorials |
 | "Ruby on Rails":http://railsapps.github.io/ruby-and-rails.html |                                     "Analytics for Rails":http://railsapps.github.io/rails-google-analytics.html |                 "Rails Bootstrap":http://railsapps.github.io/twitter-bootstrap-rails.html |
