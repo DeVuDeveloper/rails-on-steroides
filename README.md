@@ -315,7 +315,7 @@ Switch to the application directory to examine and test what you've built.
 $ cd myapp
 </pre>
 
-##. Quick Test
+## Quick Test
 
 For a "smoke test" to see if everything runs, display a list of Rake tasks.
 
@@ -325,7 +325,7 @@ $ rake -T
 
 There's no need to run @bundle exec rake@ instead of @rake@ when you are using rvm (see "rvm and bundler integration":https://rvm.io/integration/bundler/).
 
-##. Start the Web Server
+## Start the Web Server
 
 If you've chosen WEBrick or Thin for your web server, can run the app by entering the command:
 
@@ -351,7 +351,7 @@ For Phusion Passenger (Standalone):
 
 @$ passenger start@
 
-##. Login
+## Login
 
 If you've created a version of the application that sets up a default user, log in with:
 
