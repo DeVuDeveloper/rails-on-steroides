@@ -1,6 +1,6 @@
-# An application template that creates starter applications for Rails.
+An application template that creates starter applications for Rails.
 
-## It's the Rails generator on steroids.
+ It's the Rails generator on steroids.
 
 
 
