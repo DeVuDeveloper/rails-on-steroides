@@ -2,41 +2,6 @@
 
 ## It's the Rails generator on steroids.
 
-
-
-| !http://railsapps.github.io/images/rails-composer-mailing-list.png(Sign up for the Rails Composer mailing list)!:http://mailinglist.railscomposer.com/ |  !http://railsapps.github.io/images/join/join-railsapps.png(Join the RailsApps Project)!:http://railsapps.github.io/ |
-| "Rails Composer mailing list":http://mailinglist.railscomposer.com/ | "Support the project":http://railsapps.github.io/ |
-
-## From the RailsApps Project
-
-The "RailsApps":http://railsapps.github.io/ open source project offers starter applications and tutorials for Rails developers. Generate the applications with the Rails Composer tool.
-
-All the code is explained in the Capstone Rails Tutorials. You can purchase the "Capstone Rails Tutorials":https://tutorials.railsapps.org/ to support the project.
-
-"Sign up for the Rails Composer mailing list":http://mailinglist.railscomposer.com/ for news and announcements.
-
-## Starter Apps and Tutorials
-
-|_. Example |_. Tutorial |_. Comments |
-| "learn-rails":https://github.com/RailsApps/learn-rails | "Learn Ruby on Rails":http://learn-rails.com/learn-ruby-on-rails.html | from the book for beginners |
-| "rails-bootstrap":https://github.com/RailsApps/rails-bootstrap | "Rails and Bootstrap":http://railsapps.github.io/twitter-bootstrap-rails.html | Bootstrap front-end framework |
-| "rails-foundation":https://github.com/RailsApps/rails-foundation | "Rails and Foundation":http://railsapps.github.io/rails-foundation.html | Foundation front-end framework |
-| "rails-mailinglist-activejob":https://github.com/RailsApps/rails-mailinglist-activejob | "Mailing List with Active Job Tutorial":https://tutorials.railsapps.org/ | sign up for a mailing list using background processing |
-| "rails-omniauth":https://github.com/RailsApps/rails-omniauth | "OmniAuth Tutorial":https://tutorials.railsapps.org/ | authentication with OmniAuth |
-| "rails-devise":https://github.com/RailsApps/rails-devise | "Rails Devise Tutorial":https://tutorials.railsapps.org/ | authentication with Devise |
-| "rails-devise-roles":https://github.com/RailsApps/rails-devise-roles | "Role-Based Authorization":https://tutorials.railsapps.org/ | authorization with roles |
-| "rails-devise-pundit":https://github.com/RailsApps/rails-devise-pundit | "Rails Pundit Tutorial":https://tutorials.railsapps.org/ | authorization with Pundit |
-| "rails-signup-download":https://github.com/RailsApps/rails-signup-download | "Rails Signup Download":https://tutorials.railsapps.org/ | Devise plus download a PDF file |
-| "rails-stripe-checkout":https://github.com/RailsApps/rails-stripe-checkout | "Stripe Checkout":https://tutorials.railsapps.org/ | selling a product with Stripe Checkout |
-| "rails-stripe-coupons":https://github.com/RailsApps/rails-stripe-coupons | "Stripe JS With Coupons":https://tutorials.railsapps.org/ | complex Rails and Stripe integration |
-## The rails_apps_composer Gem
-
-Do you want to customize the Rails Composer application template? The Rails Composer application template is built from recipes provided by the "rails_apps_composer":https://github.com/RailsApps/rails_apps_composer gem.
-
-##. If You Are New to Rails
-
-If you're new to Rails, see "What is Ruby on Rails?":http://railsapps.github.io/what-is-ruby-rails.html, the book "Learn Ruby on Rails":http://learn-rails.com/learn-ruby-on-rails.html, and recommendations for a "Rails tutorial":https://tutorials.railsapps.org/rails-tutorial.
-
 ## Dependencies
 
 Before running the Rails Composer tool, you need to install:
@@ -44,19 +9,10 @@ Before running the Rails Composer tool, you need to install:
 * The Ruby language
 * Rails
 
-Check that appropriate versions of Ruby and Rails are installed in your development environment:
-@$ ruby -v@
-@$ rails -v@
-
-Be sure to read the article "Installing Rails":http://railsapps.github.io/installing-rails.html to make sure your development environment is set up properly.
 
 ## How To Use Rails Composer
 
 To build a Rails application using the Rails Composer tool:
-
-<pre>
-$ rails new myapp -m https://raw.github.com/RailsApps/rails-composer/master/composer.rb
-</pre>
 
 Replace @myapp@ with the name of your application.
 
@@ -64,19 +20,6 @@ The @$@ character indicates a shell prompt; don't include it when you run the co
 
 See the "Troubleshooting" section below if you see errors. In general, you'll avoid problems if you create your application using RVM as described in the next section.
 
-### Creating a Starter App Using RVM
-
-I recommend using "RVM":https://rvm.io/, the Ruby Version Manager, to manage your Rails versions, as described in the "Installing Rails":http://railsapps.github.io/installing-rails.html article.
-
-Here's how to generate a new Rails application using the Rails Composer tool and RVM:
-
-<pre>
-$ mkdir myapp
-$ cd myapp
-$ rvm use ruby-2.4.0@myapp --ruby-version --create
-$ gem install rails
-$ rails new . -m https://raw.github.com/RailsApps/rails-composer/master/composer.rb
-</pre>
 
 Instead of installing Rails into the global gemset and running @rails new@, we'll create a root directory for a new application, create a new gemset, install Rails, and then generate a starter application.
 
@@ -89,8 +32,6 @@ Finally we run @rails new .@. We use the Unix "dot" convention to refer to the c
 This approach is different from the way most beginners are taught to create a Rails application. Our approach makes it easy to create a project-specific gemset to avoid clashes between gem versions when using the Rails Composer tool.
 
 ## Choose a RailsApps Starter Application
-
-Use Rails Composer to generate any of the example applications from the "RailsApps project":http://railsapps.github.io/. You'll be able to choose your own project name when you generate the app. Generating the application gives you additional options.
 
 To build the example application, Rails must be installed in your development environment.
 
@@ -120,10 +61,7 @@ option  Choose a starter application.
    11)  rails-stripe-coupons
 </pre>
 
-Each of these applications is available as an example in the "RailsApps GitHub repo":https://github.com/RailsApps and each is accompanied by a tutorial on the "Capstone Rails Tutorials":https://tutorials.railsapps.org/ site.
-
 Make your choice. The Rails Composer tool may give you other options (other applications may have been added since these notes were written).
-
 ### Options
 
 The application generator template will ask you for additional preferences. Options vary, depending on the example application you build. Options may have changed in a newer version of Rails Composer.
@@ -178,10 +116,6 @@ If you plan to deploy to Heroku, select Puma as your production webserver. Puma 
 
 Choose "SQLite" for the easiest setup. If you choose PostgreSQL or MySQL, the databases must be installed and running before you run Rails Composer.
 
-## Template Engine
-
-The example applications use the default "ERB" Rails template engine. Optionally, you can use another template engine, such as Haml or Slim. See instructions for "Haml and Rails":http://railsapps.github.io/rails-haml.html.
-
 ## Testing
 
 If you are a beginner, select "None." Select "RSpec with Capybara" if you want tests.
@@ -189,14 +123,6 @@ If you are a beginner, select "None." Select "RSpec with Capybara" if you want t
 ## Front-end Framework
 
 If you choose a front-end framework, you'll get an application layout file, plus navigation and flash messages, styled with a default theme.
-
-## Other Choices
-
-Set a robots.txt file to ban spiders if you want to keep your new site out of Google search results.
-
-If you choose to create a GitHub repository, the generator will prompt you for a GitHub username and password.
-
-It is a good idea to use "RVM":https://rvm.io/, the Ruby Version Manager, and create a project-specific rvm gemset (not available on Windows). See "Installing Rails":http://railsapps.github.io/installing-rails.html.
 
 ## Contributed Applications
 
